@@ -18,6 +18,10 @@ rm -rf supersonic-webapp.tar.gz
 
 rm -rf ./packages/supersonic-fe/src/.umi ./packages/supersonic-fe/src/.umi-production
 
+# 在根目录更新 lockfile
+cd ./webapp
+pnpm install --no-frozen-lockfile
+
 cd ./packages/chat-sdk
 
 pnpm i
